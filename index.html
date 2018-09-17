@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+	<head>
+		<title>01coin.io</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui" />
+
+		<meta name="theme-color" content="#13b99e" />
+		<meta name="msapplication-navbutton-color" content="#13b99e" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#13b99e" />
+
+		<!-- Favicons
+		================================================== -->
+		<link rel="shortcut icon" href="img/favicon.ico">
+		
+
+		<!-- CSS
+		================================================== -->
+
+
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel='stylesheet' href='assets/css/style.css'>
+
+		<!-- Load google font
+		================================================== -->
+		<script type="text/javascript">
+			WebFontConfig = {
+				google: { families: [ 'Open+Sans:300,400,500','Lato:900', 'Poppins:400', 'Catamaran:300,400,500,600,700'] }
+			};
+			(function() {
+				var wf = document.createElement('script');
+				wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + 
+				'://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+				wf.type = 'text/javascript';
+				wf.async = 'true';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(wf, s);
+			})();
+		</script>
+
+		<!-- Load other scripts
+		================================================== -->
+		<script type="text/javascript">
+			var _html = document.documentElement,
+				isTouch = (('ontouchstart' in _html) || (navigator.msMaxTouchPoints > 0) || (navigator.maxTouchPoints));
+
+			_html.className = _html.className.replace("no-js","js");
+
+			isTouch ? _html.classList.add("touch") : _html.classList.add("no-touch");
+		</script>
+		<script type="text/javascript" src="js/device.min.js"></script>
+	</head>
+
+	<body>
+	
+    <div id="bg">
+      <div id="img"></div>
+      <div id="overlay"></div>
+      <canvas id="js-canvas"></canvas>
+    </div>
+	
+		<!-- start header -->
+		<header id="top-bar" class="top-bar--dark">
+			<div id="top-bar__inner">
+				<a id="top-bar__logo" class="site-logo" href="index.html">
+					<img class="img-responsive" src="img/site_logo.png" alt="01coin.io" />
+					<img class="img-responsive" src="img/site_logo_2.png" alt="01coin.io" />
+				</a>
+
+				<a id="top-bar__navigation-toggler" href="javascript:void(0);"><span></span></a>
+
+				<div id="top-bar__navigation-wrap">
+					<div>
+
+
+						<br class="hide--lg">
+
+						<ul id="top-bar__subnavigation">
+						#need to take out the html spacing and set a size in the menu code.
+							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#">&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp; </a></li>
+							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#">Specifications</a></li>
+							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#">&nbsp;Roadmap&nbsp;</a></li>
+							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#">&nbsp;&nbsp;Wallets&nbsp;&nbsp; </a></li>
+							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#">&nbsp;&nbsp;&nbsp;Team&nbsp;&nbsp;&nbsp; </a></li>
+							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#">&nbsp; Whitepaper&nbsp;</a></li>
+							
+
+							<li>
+								<div id="top-bar__choose-lang">
+									<div class="list-wrap">
+										<ul class="list">
+											<li><img class="img-responsive  circled" src="img/ico/flag/2.png" width="25" height="25" alt="01coin.io" ></li>
+											<li><img class="img-responsive  circled" src="img/ico/flag/3.png" width="25" height="25" alt="01coin.io" ></li>
+											<li><img class="img-responsive  circled" src="img/ico/flag/4.png" width="25" height="25" alt="01coin.io" ></li>
+										</ul>
+									</div>
+
+									<i><img class="img--active img-responsive  circled" src="img/ico/flag/1.png" width="25" height="25" alt="01coin.io" ></i>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end header -->
+
+
+		<!-- start start screen -->
+		<div id="start-screen">
+			<div style="z-index: 100;">
+
+				<div class="start-screen__content">
+					
+						<div class="grid grid--container">
+							
+									<img class="img-responsive" src="img/01 Logo.png" alt="01coin.io" />
+								
+							
+						</div>
+					
+				</div>
+			</div>
+
+			<span class="scroll-discover hide show--md">scroll down <b></b></span>
+
+		</div>
+		<!-- end start screen -->
+	
+
+		<!-- start main -->
+		<main role="main">
+
+			<!-- start section -->
+			<section class="section section--no-pb">
+				<div class="grid">
+
+					<div class="row row--md-center row--md-reverse">
+						<div class="col col--md-5 col--lg-6 col--no-gutters">
+							<img class="img-responsive" src="img/about graph.png" alt="01coin.io" />
+						</div>
+
+						<div class="col hide--md col-MB-40"></div>
+
+						<div class="col col--md-7 col--lg-6">
+							<div class="content-grid" style="margin-left: auto;max-width: 570px;">
+								<div data-aos="fade-right" data-aos-delay="150">
+									<div class="section-heading  col-MB-30 col-MT-30">
+										<h2 class="__title">About 01</h2>
+									</div>
+									
+									<p class="col-MB-35">
+									<p>01coin is an inoovative, cryptographically-secured digital asset ledger based on blockchain technology. Developed in part from the core code behind Dash, 01coin includes many innovative enhancements.</p> 
+									</p>
+									
+									<p>01coin aims to become the most community-centric project in all of crypto. Born out of its own ashes when the orignal development team mysteriously disappeared one month after the coin launched, it is now completely managed and operated by the community.</p>
+									</div>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+			</section>
+			<!-- end section -->
+				<!-- start section -->
+			<section class="section section--no-pb">
+				<div class="grid">
+
+					<div class="row row--md-center row--md-reverse">
+						<div class="col col--md-5 col--lg-6 col--no-gutters">
+							<img class="img-responsive" src="img/community graph.png" alt="01coin.io" />
+						</div>
+
+						<div class="col hide--md col-MB-40"></div>
+
+						<div class="col col--md-7 col--lg-6">
+							<div class="content-grid" style="margin-left: auto;max-width: 570px;">
+								<div data-aos="fade-right" data-aos-delay="150">
+									<div class="section-heading  col-MB-30 col-MT-30">
+										<h2 class="__title">Transparency and Trust</h2>
+									</div>
+									<p class="col-MB-35">
+									help us grow together! sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+									</p>
+									<p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. 
+
+Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. </p>
+									</div>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+			</section>
+			<!-- end section -->
+		<img class="img-responsive" src="img/line.png" alt="01coin.io" />
+			<!-- start section -->
+			<section class="section">
+				<div class="grid grid--container">
+
+					<div class="row row--xs-middle">
+						<div class="col col--lg-10">
+							<!-- start FAQ -->
+							<div class="faq">
+								<div class="accordion-container">
+									<!-- start item -->
+									<div class="accordion-item">
+										<div class="accordion-toggler">
+											<h4 class="__title h3">Coin Specifications</h4>
+
+											<i class="circled"></i>
+										</div>
+
+										<article>
+											<div class="__inner">
+												<p></p>
+												<p>
+													<img class="img-responsive" src="img/stats.png" alt="01coin.io" />
+													</p>
+											</div>
+										</article>
+									</div>
+									<!-- end item -->
+
+									<!-- start item -->
+									<div class="accordion-item">
+										<div class="accordion-toggler">
+											<h4 class="__title h3">Roadmap</h4>
+
+											<i class="circled"></i>
+										</div>
+
+										<article>
+											<div class="__inner">
+												<p>
+													Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. 
+													</p>
+											</div>
+										</article>
+									</div>
+									<!-- end item -->
+									
+									<!-- start item -->
+									<div class="accordion-item">
+										<div class="accordion-toggler">
+											<h4 class="__title h3">Wallets</h4>
+
+											<i class="circled"></i>
+										</div>
+
+										<article>
+											<div class="__inner">
+												<p>
+													Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. 
+</p>
+											</div>
+										</article>
+									</div>
+									<!-- end item -->									
+
+									<!-- start item -->
+									<div class="accordion-item">
+										<div class="accordion-toggler">
+											<h4 class="__title h3">Exchanges</h4>
+
+											<i class="circled"></i>
+										</div>
+
+										<article>
+											<div class="__inner">
+											<p></p>
+												<p class=row>
+													<img class="img-responsive" src="img/graviex.png" alt="01coin.io" />
+													<img class="img-responsive" src="img/cryptaldash.png" alt="01coin.io" />
+													</p>
+											</div>
+										</article>
+									</div>
+									<!-- end item -->
+
+
+								</div>
+
+							</div>
+							<!-- end FAQ -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end section -->			
+
+			
+			<!-- start section -->
+			<section class="section section--custom-13">
+				<style type="text/css">
+					.section--custom-13
+					{
+						background-image: url(img/stats_bg.png);
+						background-position: 50% 50%;
+						background-repeat: no-repeat;
+						background-size: cover;
+					}
+				</style>
+
+				<div class="grid grid--container">
+					
+						
+							<!-- start feature -->
+							<div class="facts facts--dark-color  text--center text--sm-left">
+								<div class="__inner">
+								<table style="border-collapse: separate; border-spacing: 30px;"> 
+								<tr><h2 class="text--center" style="color:#fff">Masternode Revenue</h2></tr>
+								<tr>
+								<th><div class=col style="border: 1px solid white; border-radius: 15px 50px">
+								<h3 style="color:#fff">Daily Income</h3>
+									
+										
+											<div class="__item">
+												<span class="num js-count" data-from="0" data-to="20" data-decimals="1" data-before="$" data-after=""></span>
+											</div>
+										
+
+										
+											<div class="__item">
+												<span class="num js-count" data-from="0" data-to="25" data-decimals="3" data-before="" data-after=" btc"></span>
+											</div>
+										
+
+										
+											<div class="__item">
+												<span class="num js-count" data-from="0" data-to="32" data-before="" data-after=" zoc"></span>
+											</div>
+										
+									</div>
+									</th><th>
+									<div class=col style="border: 1px solid white; border-radius: 15px 50px">
+								<h3 style="color:#fff">Weekly Income</h3>
+									
+										
+											<div class="__item">
+												<span class="num js-count" data-from="0" data-to="20" data-decimals="1" data-before="$" data-after=""></span>
+											</div>
+										
+
+										
+											<div class="__item">
+												<span class="num js-count" data-from="0" data-to="25" data-decimals="3" data-before="" data-after=" btc"></span>
+											</div>
+										
+
+										
+											<div class="__item">
+												<span class="num js-count" data-from="0" data-to="32" data-before="" data-after=" zoc"></span>
+											</div>
+										
+									</div>
+										
+									</div>
+									
+								</div>
+								</div>
+								<th><div class=col style="border: 1px solid white; border-radius: 15px 50px">
+								<h3 style="color:#fff">Monthly Income</h3>
+									
+										
+											<div class="__item">
+												<span class="num js-count" data-from="0" data-to="20" data-decimals="1" data-before="$" data-after=""></span>
+											</div>
+										
+
+										
+											<div class="__item">
+												<span class="num js-count" data-from="0" data-to="25" data-decimals="3" data-before="" data-after=" btc"></span>
+											</div>
+										
+
+										
+											<div class="__item">
+												<span class="num js-count" data-from="0" data-to="32" data-before="" data-after=" zoc"></span>
+											</div>
+										
+									</div>
+										
+									</div>
+									</th><th>
+									<div class=col style="border: 1px solid white; border-radius: 15px 50px">
+								<h3 style="color:#fff">Annual Income</h3>
+									
+										
+											<div class="__item">
+												<span class="num js-count" data-from="0" data-to="20" data-decimals="1" data-before="$" data-after=""></span>
+											</div>
+										
+
+										
+											<div class="__item">
+												<span class="num js-count" data-from="0" data-to="25" data-decimals="3" data-before="" data-after=" btc"></span>
+											</div>
+										
+
+										
+											<div class="__item">
+												<span class="num js-count" data-from="0" data-to="32" data-before="" data-after=" zoc"></span>
+											</div>
+										
+									</div>
+										
+									</div>
+									
+								</div>
+								</div>
+							</th></tr></table>
+							<!-- end feature -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end section -->			
+
+			<!-- start section -->
+			<section class="section">
+				<div class="grid grid--container">
+				
+					<img style="align:center" src="img/teammembers.png" alt="01coin.io" />
+								
+				</div>
+			</section>
+			<!-- end section -->
+
+			<!-- start section -->
+			<section class="section jarallax" data-speed="0.5">
+				<img class="jarallax-img" src="img/HEADER 1.png" alt="01coin.io" />
+
+				<div class="pattern" style="background-color: rgba(0, 0, 0, 0.8);"></div>
+
+				<div class="grid grid--container">
+					<div class="section-heading section-heading--center section-heading--white  col-MB-45">
+						<h2 class="__title">You can reach us on</h2>
+					</div>
+
+					<div class="row row--xs-middle">
+						<div class="col col--xs-10">
+							<!-- start company contacts -->
+							<div class="company-contacts  text--center">
+								<div class="__inner">
+									<div class="row row--xs-between">
+										<!-- start item -->
+										<div class="col col--lg-4 col--xl-3">
+											<div class="__item">
+												<a href="#"><img src="img/discord.png" alt="01coin.io" /></a>
+												<p>Discord</p>
+											</div>
+										</div>
+										<!-- end item -->
+
+									<div class="col col--lg-4 col--xl-3">
+											<div class="__item">
+												<a href="#"><img src="img/twitter.png" alt="01coin.io" /></a>
+												<p>Twitter</p>
+											</div>
+										</div>
+										<!-- end item -->
+
+									<div class="col col--lg-4 col--xl-3">
+											<div class="__item">
+												<a href="#"><img src="img/btctalk.png" alt="01coin.io" /></a>
+												<p>Bitcointalk</p>
+											</div>
+										</div>
+										<!-- end item -->
+									</div>
+								</div>
+							</div>
+							<!-- end company contacts -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end section -->
+		</main>
+		<!-- end main -->
+
+		<!-- start footer -->
+		<footer id="footer" class="text--center text--lg-left">
+			<div class="grid grid--container">
+				<div class="row row--xs-middle">
+					<div class="col col--sm-12 text--lg-center">
+						<div class="__item">
+							<span class="__copy">© 2018, 01coin.io | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end footer -->
+
+		<div id="btn-to-top-wrap">
+			<a id="btn-to-top" class="circled" href="javascript:void(0);" data-visible-offset="800"></a>
+		</div>
+		
+	
+	<script src='assets/js/vendor/jquery-2.1.4.min.js'></script>
+	<script type="text/javascript" src="js/main.min.js"></script>
+  <!--[if lte IE 9]><!-->
+  <script src='assets/js/vendor/html5shiv.min.js'></script>
+  <!--<![endif]-->
+  <script src='assets/js/vendor/bootstrap.min.js'></script>
+  <script src='assets/js/vendor/vendor.js'></script>
+  <script src='assets/js/variable.js'></script>
+  <script src='assets/js/main.js'></script>
+  <!-- /script -->
+  
+  
+	</body>
+</html>
