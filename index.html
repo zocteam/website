@@ -80,12 +80,12 @@
 
 						<ul id="top-bar__subnavigation">
 						#need to take out the html spacing and set a size in the menu code.
-							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#">&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp; </a></li>
-							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#">Specifications</a></li>
-							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#">&nbsp;Roadmap&nbsp;</a></li>
-							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#">&nbsp;&nbsp;Wallets&nbsp;&nbsp; </a></li>
-							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#">&nbsp;&nbsp;&nbsp;Team&nbsp;&nbsp;&nbsp; </a></li>
-							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#">&nbsp; Whitepaper&nbsp;</a></li>
+							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#about">About</a></li>
+							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#specs">Specifications</a></li>
+							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#roadmap">Roadmap</a></li>
+							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#wallets">Wallets</a></li>
+							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#team">Team</a></li>
+							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="/whitepaper.pdf">Whitepaper</a></li>
 							
 
 							<li>
@@ -135,7 +135,7 @@
 		<main role="main">
 
 			<!-- start section -->
-			<section class="section section--no-pb">
+			<section id="about" class="section section--no-pb">
 				<div class="grid">
 
 					<div class="row row--md-center row--md-reverse">
@@ -209,7 +209,7 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 							<div class="faq">
 								<div class="accordion-container">
 									<!-- start item -->
-									<div class="accordion-item">
+									<div id="specs" class="accordion-item">
 										<div class="accordion-toggler">
 											<h4 class="__title h3">Coin Specifications</h4>
 
@@ -217,18 +217,38 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 										</div>
 
 										<article>
-											<div class="__inner">
-												<p></p>
-												<p>
-													<img class="img-responsive" src="img/stats.png" alt="01coin.io" />
-													</p>
+											<div id="specList" class="__inner">
+                                                <div>
+                                                    <h3>Proof of Work algorithm</h3>
+                                                    Neoscrypt (ASIC-resistant)
+                                                </div>
+                                                <div>
+                                                    <h3>Target block spacing</h3>
+                                                    150 seconds
+                                                </div>
+                                                <div>
+                                                    <h3>Block reward</h3>
+                                                    26 ZOC
+                                                </div>
+                                                <div>
+                                                    <h3>Reward distribution</h3>
+                                                    50% miners /<br/> 50% masternodes
+                                                </div>
+                                                <div>
+                                                    <h3>Block reward reduction</h3>
+                                                    8.3% per annum
+                                                </div>
+                                                <div>
+                                                    <h3>Maximum total supply</h3>
+                                                    82 Million ZOC over 250 years
+                                                </div>
 											</div>
 										</article>
 									</div>
 									<!-- end item -->
 
 									<!-- start item -->
-									<div class="accordion-item">
+									<div id="roadmap" class="accordion-item">
 										<div class="accordion-toggler">
 											<h4 class="__title h3">Roadmap</h4>
 
@@ -246,7 +266,7 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 									<!-- end item -->
 									
 									<!-- start item -->
-									<div class="accordion-item">
+									<div id="wallets" class="accordion-item">
 										<div class="accordion-toggler">
 											<h4 class="__title h3">Wallets</h4>
 
@@ -423,7 +443,7 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 			<!-- end section -->			
 
 			<!-- start section -->
-			<section class="section">
+			<section class="section" id="team">
 				<div class="grid grid--container">
 				
 					<img style="align:center" src="img/teammembers.png" alt="01coin.io" />

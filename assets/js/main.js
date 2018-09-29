@@ -162,46 +162,49 @@ site loader
 /*==============================================================================
 menu
 ==============================================================================*/
-  function fn_menu() {
-    var $menuToggle = $('#menu-toggle');
-    var $form = $('#form');
+  var $form = $('#form');
 
-    $menuToggle.on('click', function(e) {
+  function toggleMenu(e) {
+    if(e)
       e.preventDefault();
 
-      $body.toggleClass('menu-in');
+    $body.toggleClass('menu-in');
 
-      if ($body.hasClass('menu-in')) {
+    if ($body.hasClass('menu-in')) {
         $('#site-main, .header-brand, #site-footer').velocity('stop').velocity('fadeOut', {
-          duration: 500,
-          easing: 'easeOutQuart',
-          queue: false
+            duration: 500,
+            easing: 'easeOutQuart',
+            queue: false
         });
         $form.velocity('stop').velocity({
-          scale: [1, 0.5],
-          opacity: [0.85, 0]
+            scale: [1, 0.5],
+            opacity: [0.85, 0]
         }, {
-          display: 'block',
-          duration: 800,
-          easing: 'easeOutQuart',
-          queue: false
+            display: 'block',
+            duration: 800,
+            easing: 'easeOutQuart',
+            queue: false
         });
-      } else {
-        $('#site-main, .header-brand, #site-footer').velocity('stop').velocity('fadeIn', {
-          duration: 800,
-          easing: 'easeInQuart',
-          queue: false
+    } else {       $('#site-main, .header-brand, #site-footer').velocity('stop').velocity('fadeIn', {
+            duration: 800,
+            easing: 'easeInQuart',
+            queue: false
         });
         $form.velocity('stop').velocity({
-          scale: 0.5,
-          opacity: 0
+            scale: 0.5,
+            opacity: 0
         }, {
-          duration: 800,
-          easing: 'easeOutQuart',
-          queue: false
+            duration: 800,
+            easing: 'easeOutQuart',
+            queue: false
         });
-      }
-    });
+    }
+  }
+  window.toggleMenu = toggleMenu;
+  function fn_menu() {
+    var $menuToggle = $('#menu-toggle');
+
+    $menuToggle.on('click', toggleMenu);
   }
 
 /*==============================================================================

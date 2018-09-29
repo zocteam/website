@@ -4834,7 +4834,6 @@ a:hover {
 }
 .custom-btn {
   position: relative;
-  
   display: inline-block;
   vertical-align: middle;
   padding-left: 30px;
@@ -4934,7 +4933,6 @@ a:hover {
   background-color: #33d7b6
 }
 .custom-btn.custom-btn--style-3 {
-  
   #background-color: #13b99e;
   color: #fff
 }
@@ -5848,7 +5846,7 @@ label {
   position: absolute;
   top: 1px;
   right: 0;
-  padding: 19px 10px
+  padding: 29px 20px;
 }
 #top-bar__navigation-toggler span {
   position: relative;
@@ -6008,7 +6006,6 @@ label {
   display: inline-block
 }
 #top-bar__subnavigation {
-  margin-top: 10%;
   line-height: 0;
   font-size: 0;
   letter-spacing: -1px
@@ -6016,7 +6013,7 @@ label {
 #top-bar__subnavigation > li {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 20px;
+  margin-right: 5px;
   line-height: 1.2;
   font-size: 1.4rem;
   letter-spacing: 0
@@ -6025,7 +6022,7 @@ label {
   margin-right: 0
 }
 #top-bar .custom-btn {
-  min-width: 0
+  min-width: 130px;
 }
 #top-bar__choose-lang {
   position: relative;
@@ -6080,7 +6077,7 @@ label {
 }
 #top-bar.is-expanded {
   height: 100%;
-  background-color: #fff
+  background-color: #060437;
 }
 #top-bar.is-expanded a:not(.custom-btn) {
   color: #555
@@ -6094,10 +6091,18 @@ label {
 #top-bar.is-expanded #top-bar__navigation-toggler span,
 #top-bar.is-expanded #top-bar__navigation-toggler span:after,
 #top-bar.is-expanded #top-bar__navigation-toggler span:before {
-  background-color: #333
+  background-color: white;
 }
 #top-bar.is-expanded #top-bar__navigation a span:after {
   background-color: #43c1a8
+}
+#top-bar.is-expanded li{
+  display:block;
+}
+.is-expanded #top-bar__choose-lang{
+  position: absolute;
+  right: 15px;
+  top: 0;
 }
 .top-bar--light a {
   color: #fff
@@ -6126,7 +6131,7 @@ label {
 .top-bar--dark #top-bar__navigation-toggler span,
 .top-bar--dark #top-bar__navigation-toggler span:after,
 .top-bar--dark #top-bar__navigation-toggler span:before {
-  background-color: #333
+  background-color: white;
 }
 .top-bar--dark #top-bar__navigation a span:after {
   background-color: #43c1a8
