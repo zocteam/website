@@ -284,17 +284,17 @@ canvas {
   display: block;
 }
 
-#specList {
+.cardList {
     padding:40px 0px;
 }
 
-#specList::after {
+.cardList::after {
     clear:both;
     content:"";
     display:block;
 }
 
-#specList > div{
+.cardList > div{
     background:white;
     box-shadow: 10px 10px 143px -26px rgba(145,145,145,1);
     border-radius: 20px;
@@ -308,14 +308,19 @@ canvas {
     font-size:15px;
 }
 
-#specList h3{
+.cardList h3{
     font-size:25px;
     height:81px;
     position: relative;
     margin:0px;
 }
 
-#specList h3::after {
+.cardList img {
+    max-width:60%;
+    margin: 0 auto;
+}
+
+.cardList h3::after {
     content:"";
     display:block;
     height:1px;
@@ -327,26 +332,26 @@ canvas {
     margin-left:-25px;
 }
 
-#specList > div:nth-child(3n+3) {
+.cardList > div:nth-child(3n+3) {
     margin-right:0px;
 }
 
 @media screen and (max-width:750px) {
-    #specList > div {
+    .cardList > div {
         width:47.5%;
         margin-right:5% !important;
     }
-    #specList > div:nth-child(even) {
+    .cardList > div:nth-child(even) {
         margin-right:0px !important;
     }
 }
 
 @media screen and (max-width:500px) {
-    #specList h3{
+    .cardList h3{
         font-size:17px;
         height:67px;
     }
-    #specList > div {
+    .cardList > div {
         padding:20px;
         font-size:13px;
         height:150px;

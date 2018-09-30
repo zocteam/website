@@ -6265,6 +6265,49 @@ label {
 #start-screen .start-screen__content p:last-child {
   margin-bottom: 0!important
 }
+.start-screen__content h1{
+    color:white;
+    width:320px;
+    font-size:40px;
+    margin:10%;
+    max-width:80%;
+    margin-bottom:0px;
+    line-height: 40px;
+}
+.start-screen__content sub{
+    margin-left:10%;
+    background: linear-gradient(to right, #285ddb, #0be8cb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+.start-screen__content .round_button{
+    margin-left:10%;
+}
+
+.round_button, .round_button_2 {
+    text-decoration: none;
+    color:white;
+    height:50px;
+    line-height: 48px;
+    border:solid 1px white;
+    border-radius:25px;
+    font-size:13px;
+    display:inline-block;
+    padding:0px 25px;
+    margin:5px;
+    font-weight: lighter;
+}
+
+.round_button_2 {
+    background: linear-gradient(to right, #285ddb, #0be8cb);
+    border:none;
+}
+
 #start-screen .scroll-discover {
   position: absolute;
   bottom: 60px;
