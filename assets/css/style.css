@@ -358,7 +358,65 @@ canvas {
     }
 }
 
+#masternodeRevenue{
+    text-align: center;
+}
 
+#masternodeRevenue h1{
+    color:white;
+    font-weight: normal;
+    font-size:25px;
+}
+
+#masternodeRevenue span{
+    font-size:14px;
+    color:white;
+    display: inline-block;
+    margin-bottom:50px;
+}
+
+#masternodeRevenue span::before{
+    content:"";
+    display:inline-block;
+    background:url(../../img/check.png);
+    width:14px;
+    height:10px;
+    margin-right:7px;
+    margin-left:15px;
+}
+
+#masternodeRevenue div{
+    border-radius: 20px;
+    border:solid 1px white;
+    padding:45px 0px;
+    display:inline-block;
+    margin:10px 20px;
+    color:white;
+    font-size:12px;
+    width:200px;
+}
+
+#masternodeRevenue div::first-line{
+    line-height: 40px;
+    font-size:14px;
+    font-weight: bold;
+}
+
+.section--custom-13::after{
+    content:"";
+    display:block;
+    height:45px;
+}
+
+@media screen and (max-width:450px ) {
+    #masternodeRevenue span{
+        margin-bottom:0px;
+        display:block;
+    }
+    #masternodeRevenue span::before{
+        margin-left: 0px;
+    }
+}
 
 /*======================================
 8.4 - Countdown

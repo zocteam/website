@@ -695,6 +695,41 @@ video background
     }
   }
 
+  function rnd(value, precision) {
+    var p=Math.pow(10,precision);
+    value = (Math.round(value*p)/p+"").split(".");
+    if(!value[1]) value[1]="";
+    while(value[1].length<precision) {
+        value[1]+="0";
+    }
+    return value.join(".");
+  }
+  /* load masternode details */
+  var masternodeDetailRows = {
+    "Daily": 1,
+    "Weekly": 7,
+    "Montly": 30.4166667,
+    "Yearly": 365
+  };
+  $.getJSON("https://explorer.01coin.io/ext/summary", function(summary){
+     $.getJSON("https://api.coinmarketcap.com/v2/ticker/1/?convert=USD", function(cmc) {
+       var btcPrice = summary.data[0].lastPriceBtc;
+       var usdPrice = cmc.data.quotes.USD.price*btcPrice;
+       var nodeCount = summary.data[0].masternodeOnlineCount;
+       var dailyZOC = 7488/nodeCount;
+       for(var name in masternodeDetailRows) {
+         var days = masternodeDetailRows[name];
+         var income = [
+           "$"+rnd(dailyZOC*days*usdPrice,2),
+           rnd(dailyZOC*days*btcPrice, 6)+" BTC",
+           rnd(dailyZOC*days, 2)+" ZOC"
+         ];
+         $("#masternodeRevenue").append($("<div>").html(
+           name+" income<br/>"+income.join("<br/>")
+         ));
+       }
+     });
+  });
 
 /*=================================================
 document on ready
