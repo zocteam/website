@@ -5551,7 +5551,7 @@ label {
   display: block
 }
 .accordion-item article {
-  display: none
+  display: none;
 }
 .accordion-item article p {
   margin-top: 15px;

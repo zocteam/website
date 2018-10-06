@@ -666,6 +666,50 @@ section {
 #footer-social a i {
   font-size: 22px;
 }
+
+#team{
+    text-align: center;
+}
+#team > div{
+    width:180px;
+    padding:20px;
+    display:inline-block;
+    font-size:13px;
+    font-weight: lighter;
+    text-align: center;
+    vertical-align: top;
+    color:#4a4d94;
+}
+#team > div > div{
+    font-weight: normal;
+    color:#0c0e41;
+    margin-bottom:5px;
+    font-size:15px;
+}
+
+#team > div::before{
+  width:140px;
+  height:140px;
+  content:"";
+  background:url('../../img/members.png');
+  display:block;
+  border-radius: 70px;
+  box-shadow: 0px 30px 143px -26px rgba(145,145,145,1);
+  margin-bottom:20px;
+}
+#team .type2::before{
+    background-position: -140px 0px;
+}
+#team .type3::before{
+    background-position: -280px 0px;
+}
+#team .type4::before{
+    background-position: -420px 0px;
+}
+#team .type5::before{
+    background-position: -560px 0px;
+}
+
 /*==================================================
 10 - Plugin
 ==================================================*/

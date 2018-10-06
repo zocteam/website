@@ -731,6 +731,23 @@ video background
      });
   });
 
+  var clickToggle = function() {
+      console.log('toggle', $(this).attr("href"));
+      if($(this).attr("href")[0]=="#") {
+          $(".accordion-item.active")
+              .removeClass("active")
+              .children("article")
+              .css({display:"none"});
+          $($(this).attr("href")+" i")
+              .click();
+      }
+      $('#top-bar__navigation-toggler').click();
+      return true;
+  }
+  $("#top-bar__subnavigation .custom-btn")
+      .click(clickToggle)
+      .on("touchstart", clickToggle);
+
 /*=================================================
 document on ready
 =================================================*/
