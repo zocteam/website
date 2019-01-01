@@ -741,7 +741,7 @@ video background
           $($(this).attr("href")+" i")
               .click();
       }
-      $('#top-bar__navigation-toggler').click();
+      $('#top-bar__navigation-toggler.is-active').click();
       return true;
   }
   $("#top-bar__subnavigation .custom-btn")
