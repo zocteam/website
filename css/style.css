@@ -4938,9 +4938,8 @@ a:hover {
 }
 .custom-btn.custom-btn--style-3:focus,
 .custom-btn.custom-btn--style-3:hover {
-  background-image: url(../img/menu_button_background.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: linear-gradient(to right, #285ddb, #0be8cb);
+  border-radius:19px;
 }
 .custom-btn.custom-btn--style-4 {
   background-color: #00acfe;
@@ -6013,7 +6012,6 @@ label {
 #top-bar__subnavigation > li {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 5px;
   line-height: 1.2;
   font-size: 1.4rem;
   letter-spacing: 0
@@ -6022,7 +6020,6 @@ label {
   margin-right: 0
 }
 #top-bar .custom-btn {
-  min-width: 130px;
 }
 #top-bar__choose-lang {
   position: relative;
