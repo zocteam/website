@@ -7364,7 +7364,7 @@ label {
     margin-top: 0
   }
   .company-contacts .__item {
-    text-align: left
+    text-align: center;
   }
 }
 .token-sale .__inner {
@@ -7488,11 +7488,14 @@ label {
 .company-contacts .__item {
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 30px
+  margin-bottom: 30px;
+  text-align: center;
 }
 .company-contacts a {
   text-decoration: none;
-  color: inherit
+  color: inherit;
+  min-height:150px;
+  display: inline-block;
 }
 #footer {
   padding-top: 60px;
