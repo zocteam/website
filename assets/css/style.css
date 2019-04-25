@@ -853,3 +853,14 @@ section {
 .company-contacts .col *{
     min-height: auto;
 }
+
+#downloads  a{
+    margin: 20px 0px;
+}
+
+
+#explorers li {
+    display: list-item;
+    list-style: circle;
+    margin-left:20px;
+}
