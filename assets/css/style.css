@@ -831,3 +831,25 @@ section {
 @viewport {
   width: device-width;
 }
+
+
+.company-contacts .col {
+    display: inline-block;
+    float: none;
+    max-width: 64px;
+    height: 100px;
+    text-align: center;
+    font-size:12px;
+}
+
+.company-contacts .col img{
+    height:37px;
+}
+
+.company-contacts .col p{
+    margin-top: 7px;
+}
+
+.company-contacts .col *{
+    min-height: auto;
+}
