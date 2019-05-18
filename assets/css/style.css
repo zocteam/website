@@ -687,6 +687,13 @@ section {
     font-size:15px;
 }
 
+#team > div > span{
+    padding-left: 25px;
+    background: url("../../img/discord_dark.svg") no-repeat 0 0;
+    background-size: contain;
+    display: inline-block;
+}
+
 #team > div::before{
   width:140px;
   height:140px;
