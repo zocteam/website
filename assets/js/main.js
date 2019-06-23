@@ -708,13 +708,13 @@ video background
   var masternodeDetailRows = {
     "Daily": 1,
     "Weekly": 7,
-    "Montly": 30.4166667,
+    "Monthly": 30.4166667,
     "Yearly": 365
   };
   $.getJSON("https://explorer.01coin.io/ext/summary", function(summary){
-     $.getJSON("https://api.coinmarketcap.com/v2/ticker/1/?convert=USD", function(cmc) {
+     $.getJSON("https://api.coindesk.com/v1/bpi/currentprice.json", function(coindesk) {
        var btcPrice = summary.data[0].lastPriceBtc;
-       var usdPrice = cmc.data.quotes.USD.price*btcPrice;
+       var usdPrice = coindesk.bpi.USD.rate_float*btcPrice;
        var nodeCount = summary.data[0].masternodeOnlineCount;
        var dailyZOC = 7488/nodeCount;
        for(var name in masternodeDetailRows) {
