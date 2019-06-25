@@ -211,6 +211,14 @@ canvas {
 .bottom-cloud #cloud4 {
   bottom: 15%;
 }
+.youtube {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 450px;
+  border: 1px solid lightgrey;
+}
 /*======================================
 8.3 - Section Header
 ======================================*/
@@ -688,8 +696,8 @@ section {
 }
 
 #team > div > span{
-    padding-left: 25px;
-    background: url("../../img/discord_dark.svg") no-repeat 0 0;
+    /*padding-left: 25px;
+    background: url("../../img/discord_dark.svg") no-repeat 0 0;*/
     background-size: contain;
     display: inline-block;
 }
@@ -715,6 +723,9 @@ section {
 }
 #team .type5::before{
     background-position: -560px 0px;
+}
+#team .type6::before{
+    background-position: -700px 0px;
 }
 
 /*==================================================
