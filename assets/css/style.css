@@ -217,7 +217,9 @@ canvas {
   margin-right: auto;
   width: 800px;
   height: 450px;
-  border: 1px solid lightgrey;
+  border: 1px solid #1ed1dd;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.25);
 }
 /*======================================
 8.3 - Section Header
