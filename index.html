@@ -80,12 +80,13 @@
 
 						<ul id="top-bar__subnavigation">
 						#need to take out the html spacing and set a size in the menu code.
-							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="http://kb.01coin.io/">KB</a></li>
 							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#about">About</a></li>
 							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#news">News</a></li>
 							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#downloads">Downloads</a></li>
 							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#exchanges">Where to buy?</a></li>
 							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#explorers">Explorers</a></li>
+							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#partners">Partners</a></li>
+							<li><a class="custom-btn custom-btn--small custom-btn--style-3" target="_blank" href="http://kb.01coin.io/">Knowledge Base</a></li>
 						</ul>
 					</div>
 				</div>
@@ -114,9 +115,11 @@
 			<span class="scroll-discover hide show--md">scroll down <b></b></span>
 
 		</div>
-		<iframe id="ytplayer" type="text/html" width="100%" height="360"
-				src="https://www.youtube.com/embed/HTMAkn7R6mE?autoplay=1&origin=http://example.com"
-				frameborder="0"></iframe>
+		<div style="padding-top: 100px;">
+		<iframe id="ytplayer" type="text/html" class="youtube" frameborder="0" allowfullscreen 
+				src="https://www.youtube.com/embed/HTMAkn7R6mE?autoplay=0">
+		</iframe>
+		</div>
 		<!-- end start screen -->
 
 
@@ -138,7 +141,7 @@
 							<div class="content-grid" style="margin-left: auto;max-width: 570px;">
 								<div data-aos="fade-right" data-aos-delay="150">
 									<div class="section-heading  col-MB-30 col-MT-30">
-										<h2 class="__title">About 01</h2>
+										<h2 class="__title">About 01coin</h2>
 									</div>
 
 									<p class="col-MB-35">
@@ -185,7 +188,7 @@
 				</div>
 			</section>
 			<!-- end section -->
-		<img class="img-responsive" src="img/line.png" alt="01coin.io" />
+		<img width="100%" src="img/line.png" alt="01coin.io" />
 			<!-- start section -->
 			<section class="section">
 				<div class="grid grid--container">
@@ -237,23 +240,23 @@
 									<!-- start item -->
 									<div id="downloads" class="accordion-item">
 										<div class="accordion-toggler">
-											<h4 class="__title h3">Download wallet</h4>
+											<h4 class="__title h3">Download Wallet</h4>
 											<i class="circled"></i>
 										</div>
 
 										<article>
 											<div class="__inner">
 												<div class="row" style="text-align: center">
-													<a href="https://github.com/zocteam/zeroonecoin/releases/download/v0.12.3.4/zeroonecore-0.12.3-win64.zip" class="col col--md-4">
-														<img src="img/windows.png" alt="windows"/>
+													<a href="https://github.com/zocteam/zeroonecoin/releases/download/v0.12.3.7/zeroonecore-0.12.3.7-win64.zip" class="col col--md-4">
+														<img src="img/windows.png" alt="Windows"/>
 														<p>Windows</p>
 													</a>
-													<a href="https://github.com/zocteam/zeroonecoin/releases/download/v0.12.3.4/zeroonecore-0.12.3-osx-unsigned.dmg" class="col col--md-4">
-														<img src="img/macos.png" alt="windows"/>
+													<a href="https://github.com/zocteam/zeroonecoin/releases/download/v0.12.3.7/zeroonecore-0.12.3.7-osx.dmg" class="col col--md-4">
+														<img src="img/macos.png" alt="MacOS"/>
 														<p>MacOS</p>
 													</a>
-													<a href="https://github.com/zocteam/zeroonecoin/releases/download/v0.12.3.4/zeroonecore-0.12.3-x86_64-linux-gnu.tar.gz" class="col col--md-4">
-														<img src="img/linux.png" alt="windows"/>
+													<a href="https://github.com/zocteam/zeroonecoin/releases/download/v0.12.3.7/zeroonecore-0.12.3.7-x86_64-linux-gnu.tar.gz" class="col col--md-4">
+														<img src="img/linux.png" alt="Linux"/>
 														<p>Linux</p>
 													</a>
 												</div>
@@ -265,7 +268,7 @@
 									<!-- start item -->
 									<div class="accordion-item" id="exchanges">
 										<div class="accordion-toggler">
-											<h4 class="__title h3">Where to buy?</h4>
+											<h4 class="__title h3">Where to Buy?</h4>
 
 											<i class="circled"></i>
 										</div>
@@ -273,34 +276,35 @@
 										<article>
 											<div class="__inner cardList">
                                                 <div>
-													<a href="https://graviex.net/markets/zocbtc">
+													<a target="_blank" href="https://graviex.net/markets/zocbtc">
 														<img class="img-responsive" src="img/graviex.png" alt="Graviex" />
 														Graviex
 													</a>
                                                 </div>
                                                 <div>
-													<a href="https://www.cryptaldash.com">
+													<a target="_blank" href="https://www.cryptaldash.com">
 														<img class="img-responsive" src="img/cryptaldash.png" alt="Cryptaldash" />
 														CryptalDash
 													</a>
                                                 </div>
                                                 <div>
-													<a href="https://crex24.com/exchange/ZOC-BTC">
+													<a target="_blank" href="https://crex24.com/exchange/ZOC-BTC">
 														<img class="img-responsive" src="img/crex24.png" alt="Crex 24" />
 														Crex24
 													</a>
                                                 </div>
-                                                <div>
+												<!-- Since Ubit has been down for 2 weeks, we should comment it out for now...
+												<div>
 													<a href="https://ubit.pw/markets/zocbtc">
 														<img class="img-responsive" src="img/ubit.png" alt="UBit" />
 														UBIT
 													</a>
                                                 </div>
+												-->
 											</div>
 										</article>
 									</div>
 									<!-- end item -->
-
 
 									<!-- start item -->
 									<div id="explorers" class="accordion-item">
@@ -322,6 +326,30 @@
 														<a target="_blank" href="https://zoc.ccore.online/">CCore</a>
 													</li>
 												</ul>
+											</div>
+										</article>
+									</div>
+									<!-- end item -->
+
+									<!-- start item -->
+									<div id="partners" class="accordion-item">
+										<div class="accordion-toggler">
+											<h4 class="__title h3">Our Partners</h4>
+											<i class="circled"></i>
+										</div>
+
+										<article>
+											<div class="__inner">
+												<div class="row" style="text-align: center">
+													<a target="_blank" href="https://01VPS.net/" class="col col--md-6">
+														<img src="img/01vps.png" alt="01VPS.net"/>
+														<p>01VPS.net</p>
+													</a>
+													<a target="_blank" href="https://dice-age.com/" class="col col--md-6">
+														<img src="img/dice-age.png" alt="dice-age.com"/>
+														<p>dice-age.com</p>
+													</a>
+												</div>
 											</div>
 										</article>
 									</div>
@@ -368,43 +396,43 @@
 
 			<!-- start section -->
 			<section class="section" id="team">
-                <div class="type2">
+                <div class="type5">
                     <div>Owen</div>
-					<span>@OwenRay#1791</span><br/>
+					<span>@OwenRay</span><br/>
 					Technical Lead
                 </div>
-                <div class="type4">
+                <div class="type1">
                     <div>Lucas</div>
-					<span>@deadthings#7336</span><br/>
+					<span>@deadthings</span><br/>
                     Project Manager
                 </div>
-                <div class="type1">
+                <div class="type2">
                     <div>Carlos</div>
-					<span>@cmelx#2625</span><br/>
+					<span>@cmelx</span><br/>
 					Core Developer
                 </div>
                 <div class="type3">
                     <div>You?</div>
                     Being awesome
                 </div>
-                <div class="type5">
+                <div class="type4">
                     <div>Evy</div>
-					<span>@Evydder#9342</span><br/>
+					<span>@Evydder</span><br/>
                     Developer
                 </div>
-                <div class="type4">
+                <div class="type6">
                     <div>Julia</div>
-					<span>@COIN (german)#1581</span><br/>
+					<span>@COIN (german)</span><br/>
                     Community Manager
                 </div>
-                <div class="type6">
+                <div class="type5">
                     <div>Jesson</div>
-					<span>@Jesson#7485</span><br/>
+					<span>@Jesson</span><br/>
                     Designer
                 </div>
 			</section>
 			<!-- end section -->
-            <img class="img-responsive" src="img/line.png" alt="01coin.io"/>
+            <img width="100%" src="img/line.png" alt="01coin.io"/>
 			<section class="section" id="news">
 				<div class="grid">
 					<div data-aos="fade-right" data-aos-delay="150" class="aos-init aos-animate">
@@ -536,7 +564,7 @@
 				<div class="row row--xs-middle">
 					<div class="col col--sm-12 text--lg-center">
 						<div class="__item">
-							<span class="__copy">© 2018, 01coin.io | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></span>
+							<span class="__copy">© 2019 01coin.io | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></span>
 						</div>
 					</div>
 				</div>
